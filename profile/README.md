@@ -62,7 +62,9 @@ make install
 make run
 ```
 
-For Elasticsearch Consumer and Backend-Client, don't forget to change the password to your Elasticsearch password
+**NOTE**: For Elasticsearch Consumer and Backend-Client, don't forget to change the password to your Elasticsearch password
+
+Open Consumer as project in IntelliJ
 
 As for the [web application](https://github.com/TwitterStreaming/ConsumerAndProducer/tree/dev)
 
@@ -101,9 +103,9 @@ pip install django django-cors-headers elasticsearch python-dotenv
 py manage.py runserver # py, python or python3
 ```
 
+**NOTE**: For Elasticsearch Consumer and Backend-Client, don't forget to change the password to your Elasticsearch password
 
-For Elasticsearch Consumer and Backend-Client, don't forget to change the password to your Elasticsearch password
-
+Open Consumer as project in IntelliJ
 As for the [web application](https://github.com/TwitterStreaming/ConsumerAndProducer/tree/dev)
 
 ```bash
