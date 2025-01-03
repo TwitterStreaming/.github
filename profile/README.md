@@ -106,6 +106,7 @@ py manage.py runserver # py, python or python3
 **NOTE**: For Elasticsearch Consumer and Backend-Client, don't forget to change the password to your Elasticsearch password
 
 Open Consumer as project in IntelliJ
+
 As for the [web application](https://github.com/TwitterStreaming/ConsumerAndProducer/tree/dev)
 
 ```bash
