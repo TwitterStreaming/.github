@@ -4,17 +4,17 @@ This project focuses on designing and implementing a complete data pipeline to h
 
 ## Documentation quick links
 
-- [Pipeline Components](https://github.com/TwitterStreaming#pipeline-components)
-    - [Tweet Stream Ingestion](http://github.com/TwitterStreaming#1-tweet-stream-ingestion)
-    - [Tweet Processing Pipeline](https://github.com/TwitterStreaming#2-tweet-processing-pipeline)
-    - [Storage](http://github.com/TwitterStreaming#3-storage)
-    - [Web Application](https://github.com/TwitterStreaming#4-web-application)
-- [Installation](http://github.com/TwitterStreaming#installation)
-    - [Linux/macOS](http://github.com/TwitterStreaming#linuxmacos-unix)
-    - [Windows](http://github.com/TwitterStreaming#windows)
-- [Kafka and Zookeeper](http://github.com/TwitterStreaming#kafka-and-zookeeper)
-    - [Linux/macOS](http://github.com/TwitterStreaming#linuxmacos-unix-1)
-    - [Windows](http://github.com/TwitterStreaming#windows-1)
+- [Pipeline Components](#pipeline-components)
+    - [Tweet Stream Ingestion](#1-tweet-stream-ingestion)
+    - [Tweet Processing Pipeline](#2-tweet-processing-pipeline)
+    - [Storage](#3-storage)
+    - [Web Application](#4-web-application)
+- [Installation](#installation)
+    - [Linux/macOS](#linuxmacos-unix)
+    - [Windows](#windows)
+- [Kafka and Zookeeper](#kafka-and-zookeeper)
+    - [Linux/macOS](#linuxmacos-unix-1)
+    - [Windows](#windows-1)
 
 ## Pipeline Components
 
