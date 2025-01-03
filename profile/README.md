@@ -1,4 +1,4 @@
-# Twitter Stream Processing Pipeline
+ # Twitter Stream Processing Pipeline
 
 This project focuses on designing and implementing a complete data pipeline to handle streaming tweets, process the data, and visualize the results in a user-friendly web application. The system integrates several components to ensure real-time data ingestion, processing, and visualization.
 
@@ -139,8 +139,8 @@ Then to run the servers
 In Windows, it’s a bit different as you have to download it via this [link](https://dlcdn.apache.org/kafka/3.8.1/kafka_2.12-3.8.1.tgz), then extract it and place the folder in C:\ and name it `kafka`, then run the servers via
 
 ```powershell
-C:\kafka\bin\windows\zookeeper-server-start.bat C:\kafka\config\zookeeper.properties
-C:\kafka\bin\windows\kafka-server-start.bat C:\config\server.properties
+C:\kafka\bin\windows\zookeeper-server-start.bat .\kafka\config\zookeeper.properties
+C:\kafka\bin\windows\kafka-server-start.bat C:\kafka\config\server.properties
 ```
 
 <img width="6456" alt="Twitter Stream Processing Pipeline figure" src="https://github.com/user-attachments/assets/1c23ea80-041a-45b6-8593-f9913165ae2e" />
