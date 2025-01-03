@@ -5,16 +5,16 @@ This project focuses on designing and implementing a complete data pipeline to h
 ## Documentation quick links
 
 - [Pipeline Components](https://github.com/TwitterStreaming#pipeline-components)
-    - [Tweet Stream Ingestion](http://github.com/twitterstreaming#1-tweet-stream-ingestion)
+    - [Tweet Stream Ingestion](http://github.com/TwitterStreaming#1-tweet-stream-ingestion)
     - [Tweet Processing Pipeline](https://github.com/TwitterStreaming#2-tweet-processing-pipeline)
-    - [Storage](http://github.com/twitterstreaming#3-storage)
+    - [Storage](http://github.com/TwitterStreaming#3-storage)
     - [Web Application](https://github.com/TwitterStreaming#4-web-application)
-- [Installation](http://github.com/twitterstreaming#installation)
-    - [Linux/macOS](http://github.com/twitterstreaming#linuxmacos-unix)
-    - [Windows](http://github.com/twitterstreaming#windows)
-- [Kafka and Zookeeper](http://github.com/twitterstreaming#kafka-and-zookeeper)
-    - [Linux/macOS](http://github.com/twitterstreaming#linuxmacos-unix-1)
-    - [Windows](http://github.com/twitterstreaming#windows-1)
+- [Installation](http://github.com/TwitterStreaming#installation)
+    - [Linux/macOS](http://github.com/TwitterStreaming#linuxmacos-unix)
+    - [Windows](http://github.com/TwitterStreaming#windows)
+- [Kafka and Zookeeper](http://github.com/TwitterStreaming#kafka-and-zookeeper)
+    - [Linux/macOS](http://github.com/TwitterStreaming#linuxmacos-unix-1)
+    - [Windows](http://github.com/TwitterStreaming#windows-1)
 
 ## Pipeline Components
 
@@ -134,3 +134,7 @@ In Windows, it’s a bit different as you have to download it via this [link](ht
 C:\kafka\bin\zookeeper-server-start.bat C:\kafka\config\zookeeper.properties
 C:\kafka\bin\kafka-server-start.bat C:\config\server.properties
 ```
+
+<img width="6456" alt="Twitter Stream Processing Pipeline figure" src="https://github.com/user-attachments/assets/1c23ea80-041a-45b6-8593-f9913165ae2e" />
+
+For a higher quality, click this [link](https://drive.google.com/file/d/1aqYEskg_q7dLKWS8S1zGCcB5T_gA6Acj/view?usp=sharing)
