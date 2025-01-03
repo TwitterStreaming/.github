@@ -1,3 +1,135 @@
-# Twitter Streaming
+# Twitter Stream Processing Pipeline
 
-oops
+This project focuses on designing and implementing a complete data pipeline to handle streaming tweets, process the data, and visualize the results in a user-friendly web application. The system integrates several components to ensure real-time data ingestion, processing, and visualization.
+
+## Documentation quick links
+
+- Pipeline Components
+- Tweet Processing Pipeline
+- Storage
+- Web Application
+- Installation
+    - [Linux/macOS]()
+    - [Windows]()
+- Kafka and Zookeeper
+    - [Linux/macOS]()
+    - [Windows]()
+
+## Pipeline Components
+
+### 1. **Tweet Stream Ingestion**
+
+- A producer program reads data from the `boulder_flood_geolocated_tweets.json` file and streams it to an Apache Kafka topic named `raw-tweets`.
+
+### 2. **Tweet Processing Pipeline**
+
+The pipeline includes three consumers to handle data processing:
+
+- **Consumer 1**: Written in Scala with Spark, it extracts key fields (e.g., text, creation time, geo-coordinates, hashtags) from tweets in the `raw-tweets` Kafka topic and writes the processed data to the `transform-tweets` topic.
+- **Consumer 2**: Performs sentiment analysis using Spark NLP or TextBlob on tweets from the `transform-tweets` topic, adding sentiment data and forwarding results to the `sentiment-tweets` topic.
+- **Consumer 3**: A Python consumer writes tweets from the `sentiment-tweets` topic into an Elasticsearch database for querying and visualization.
+
+### 3. **Storage**
+
+- Stores processed tweets and metadata in **Elasticsearch** database.
+- Implements an efficient schema design to support fast querying for tweet annotations and visualization.
+
+### 4. **Web Application**
+
+The web application provides an interactive interface with the following features:
+
+- **Keyword Search**: Allows users to enter a keyword to query tweets.
+- **Geospatial Visualization**: Renders tweets containing the keyword on a map based on their geo-coordinates (longitude/latitude).
+- **Trend Diagram**: Displays a temporal distribution of tweets over time with hourly and daily aggregation levels.
+- **Sentiment Analysis Gauge**: Visualizes the average sentiment score of tweets over a specified period.
+
+---
+
+This pipeline demonstrates the integration of modern data engineering tools and techniques to build a robust, scalable, and user-friendly system for real-time data processing and visualization.
+
+## Installation
+
+### Linux/macOS (Unix)
+
+As for each [Consumer, Producer](https://github.com/TwitterStreaming/ConsumerAndProducer/tree/dev) and [Backend-Client](https://github.com/TwitterStreaming/Backend-Client/tree/dev)
+
+```bash
+# cd into the directory that you want to run
+make init
+source venv/bin/activate
+make install
+make run
+```
+
+As for the [web application]([https://github.com/TwitterStreaming/web/tree/dev](https://github.com/TwitterStreaming/ConsumerAndProducer/tree/dev))
+
+```bash
+npm i
+npm start
+```
+
+### Windows
+
+As for each Consumer, Producer and Backend-Client
+
+```powershell
+Remove-Item -Recurse -Force venv # rmdir venv for cmd
+py -m venv venv # py, python or python3
+.\venv\Scripts\activate
+```
+
+To install dependencies and run for each one of them
+
+```powershell
+# PythonConsumer
+pip install nltk pandas scikit-learn textblob confluent-kafka
+py consumer.py # py, python or python3
+
+# ElasticSearchConsumer
+pip install confluent-kafka elasticsearch
+py elasticSeachConsumer.py # py, python or python3
+
+# Producer
+pip install confluent-kafka
+py producer.py # py, python or python3
+
+# Backend-Client
+pip install django django-cors-headers elasticsearch
+py manage.py runserver # py, python or python3
+```
+
+As for the [web application]([https://github.com/TwitterStreaming/web/tree/dev](https://github.com/TwitterStreaming/ConsumerAndProducer/tree/dev))
+
+```bash
+npm i
+npm start
+```
+
+## Kafka and Zookeeper
+
+### Linux/macOS (Unix)
+
+To install Kafka and Zookeeper
+
+```bash
+curl https://dlcdn.apache.org/kafka/3.8.1/kafka_2.12-3.8.1.tgz --output ~/kafka.tgz
+tar -xvzf ~/kafka.tgz
+rm ~/kafka.tgz
+mv kafka_2.12-3.8.1 ~/kafka
+```
+
+Then to run the servers
+
+```bash
+~/kafka/bin/zookeeper-server-start.sh ~/kafka/config/zookeeper.properties
+~/kafka/bin/kafka-server-start.sh ~/config/server.properties
+```
+
+### Windows
+
+In Windows, it’s a bit different as you have to download it via this [link](https://dlcdn.apache.org/kafka/3.8.1/kafka_2.12-3.8.1.tgz), then extract it and place the folder in C:\ and name it `kafka`, then run the servers via
+
+```powershell
+C:\kafka\bin\zookeeper-server-start.bat C:\kafka\config\zookeeper.properties
+C:\kafka\bin\kafka-server-start.bat C:\config\server.properties
+```
