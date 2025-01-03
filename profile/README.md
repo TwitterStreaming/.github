@@ -62,7 +62,9 @@ make install
 make run
 ```
 
-As for the [web application](https://www.notion.so/%5B%3Chttps://github.com/TwitterStreaming/web/tree/dev%3E%5D(%3Chttps://github.com/TwitterStreaming/ConsumerAndProducer/tree/dev%3E))
+For Elasticsearch Consumer and Backend-Client, don't forget to change the password to your Elasticsearch password
+
+As for the [web application](https://github.com/TwitterStreaming/ConsumerAndProducer/tree/dev)
 
 ```bash
 npm i
@@ -87,7 +89,7 @@ pip install nltk pandas scikit-learn textblob confluent-kafka
 py consumer.py # py, python or python3
 
 # ElasticSearchConsumer
-pip install confluent-kafka elasticsearch
+pip install confluent-kafka elasticsearch python-dotenv
 py elasticSeachConsumer.py # py, python or python3
 
 # Producer
@@ -95,11 +97,14 @@ pip install confluent-kafka
 py producer.py # py, python or python3
 
 # Backend-Client
-pip install django django-cors-headers elasticsearch
+pip install django django-cors-headers elasticsearch python-dotenv
 py manage.py runserver # py, python or python3
 ```
 
-As for the [web application](https://www.notion.so/%5B%3Chttps://github.com/TwitterStreaming/web/tree/dev%3E%5D(%3Chttps://github.com/TwitterStreaming/ConsumerAndProducer/tree/dev%3E))
+
+For Elasticsearch Consumer and Backend-Client, don't forget to change the password to your Elasticsearch password
+
+As for the [web application](https://github.com/TwitterStreaming/ConsumerAndProducer/tree/dev)
 
 ```bash
 npm i
