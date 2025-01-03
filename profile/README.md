@@ -20,7 +20,7 @@ This project focuses on designing and implementing a complete data pipeline to h
 
 ### 1. **Tweet Stream Ingestion**
 
-- A producer program reads data from the `boulder_flood_geolocated_tweets.json` file and streams it to an Apache Kafka topic named `raw-tweets`.
+- A producer program reads data from the `tweets.json` file and streams it to an Apache Kafka topic named `raw-tweets`.
 
 ### 2. **Tweet Processing Pipeline**
 
@@ -62,7 +62,7 @@ make install
 make run
 ```
 
-As for the [web application]([https://github.com/TwitterStreaming/web/tree/dev](https://github.com/TwitterStreaming/ConsumerAndProducer/tree/dev))
+As for the [web application](https://www.notion.so/%5B%3Chttps://github.com/TwitterStreaming/web/tree/dev%3E%5D(%3Chttps://github.com/TwitterStreaming/ConsumerAndProducer/tree/dev%3E))
 
 ```bash
 npm i
@@ -99,7 +99,7 @@ pip install django django-cors-headers elasticsearch
 py manage.py runserver # py, python or python3
 ```
 
-As for the [web application]([https://github.com/TwitterStreaming/web/tree/dev](https://github.com/TwitterStreaming/ConsumerAndProducer/tree/dev))
+As for the [web application](https://www.notion.so/%5B%3Chttps://github.com/TwitterStreaming/web/tree/dev%3E%5D(%3Chttps://github.com/TwitterStreaming/ConsumerAndProducer/tree/dev%3E))
 
 ```bash
 npm i
@@ -113,7 +113,7 @@ npm start
 To install Kafka and Zookeeper
 
 ```bash
-curl https://dlcdn.apache.org/kafka/3.8.1/kafka_2.12-3.8.1.tgz --output ~/kafka.tgz
+curl <https://dlcdn.apache.org/kafka/3.8.1/kafka_2.12-3.8.1.tgz> --output ~/kafka.tgz
 tar -xvzf ~/kafka.tgz
 rm ~/kafka.tgz
 mv kafka_2.12-3.8.1 ~/kafka
