@@ -121,7 +121,7 @@ npm start
 To install Kafka and Zookeeper
 
 ```bash
-curl <https://dlcdn.apache.org/kafka/3.8.1/kafka_2.12-3.8.1.tgz> --output ~/kafka.tgz
+curl "https://dlcdn.apache.org/kafka/3.8.1/kafka_2.12-3.8.1.tgz" --output ~/kafka.tgz
 tar -xvzf ~/kafka.tgz
 rm ~/kafka.tgz
 mv kafka_2.12-3.8.1 ~/kafka
