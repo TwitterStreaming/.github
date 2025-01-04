@@ -139,7 +139,7 @@ Then to run the servers
 In Windows, it’s a bit different as you have to download it via this [link](https://dlcdn.apache.org/kafka/3.8.1/kafka_2.12-3.8.1.tgz), then extract it and place the folder in C:\ and name it `kafka`, then run the servers via
 
 ```powershell
-C:\kafka\bin\windows\zookeeper-server-start.bat .\kafka\config\zookeeper.properties
+C:\kafka\bin\windows\zookeeper-server-start.bat C:\kafka\config\zookeeper.properties
 C:\kafka\bin\windows\kafka-server-start.bat C:\kafka\config\server.properties
 ```
 
