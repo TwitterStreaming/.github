@@ -131,7 +131,7 @@ Then to run the servers
 
 ```bash
 ~/kafka/bin/zookeeper-server-start.sh ~/kafka/config/zookeeper.properties
-~/kafka/bin/kafka-server-start.sh ~/config/server.properties
+~/kafka/bin/kafka-server-start.sh ~/kafka/config/server.properties
 ```
 
 ### Windows
