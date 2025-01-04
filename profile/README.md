@@ -143,6 +143,6 @@ C:\kafka\bin\windows\zookeeper-server-start.bat C:\kafka\config\zookeeper.proper
 C:\kafka\bin\windows\kafka-server-start.bat C:\kafka\config\server.properties
 ```
 
-<img width="6456" alt="Twitter Stream Processing Pipeline figure" src="https://github.com/user-attachments/assets/1c23ea80-041a-45b6-8593-f9913165ae2e" />
+<img width="6456" alt="Twitter Stream Processing Pipeline figure (1)" src="https://github.com/user-attachments/assets/045a1355-faff-4ad5-af62-73298175f046" />
 
 For a higher quality, click this [link](https://drive.google.com/file/d/1aqYEskg_q7dLKWS8S1zGCcB5T_gA6Acj/view?usp=sharing)
