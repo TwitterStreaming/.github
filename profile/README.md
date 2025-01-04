@@ -66,7 +66,7 @@ make run
 
 Open Consumer as project in IntelliJ
 
-As for the [web application](https://github.com/TwitterStreaming/ConsumerAndProducer/tree/dev)
+As for the [web application](https://github.com/TwitterStreaming/ConsumerAndProducer)
 
 ```bash
 npm i
@@ -107,7 +107,7 @@ py manage.py runserver # py, python or python3
 
 Open Consumer as project in IntelliJ
 
-As for the [web application](https://github.com/TwitterStreaming/ConsumerAndProducer/tree/dev)
+As for the [web application](https://github.com/TwitterStreaming/ConsumerAndProducer)
 
 ```bash
 npm i
